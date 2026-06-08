@@ -1,0 +1,135 @@
+.footer {
+  width: 100%;
+  background-color: #050c1a ;   /* slate-900 (matches body) */
+  color: #e2e8f0;              /* slate-200 */
+  padding: 60px 20px 25px;
+  border-top: 1px solid #334155; /* slate-700 */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-column h3,
+.footer-logo {
+  color: #ffffff;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #94a3b8; /* slate-400 */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #cbd5e1; /* slate-300 */
+  display: inline-block;
+  transition: all 0.25s ease;
+}
+
+/* Hover effect (Brand Blue instead of green) */
+.footer-column ul li a:hover {
+  color: #3b82f6;  /* brand-500 */
+  transform: translateX(4px);
+}
+
+/* Click effect */
+.footer-column ul li a:active {
+  transform: scale(0.96);
+}
+
+.footer-bottom {
+  border-top: 1px solid #334155; /* slate-700 */
+  margin-top: 50px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #94a3b8; /* slate-400 */
+}
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 50px 20px 20px;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+
+  .footer-column h3,
+  .footer-logo {
+    font-size: 16px;
+  }
+
+  .footer-column p {
+    font-size: 13px;
+  }
+
+  .footer-column ul li a {
+    font-size: 14px;
+  }
+
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+/* @media (max-width: 900px) {
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* 1st column full width */
+  /* .footer-column:nth-child(1) {
+    grid-column: 1 / -1;
+    text-align: center;
+  } */
+
+    /* 2nd column */
+  /* .footer-column:nth-child(2) {
+    text-align: left;
+  } */
+
+  /* 3rd & 4th should behave like normal blocks under 2nd */
+  /* .footer-column:nth-child(3),
+  .footer-column:nth-child(4) {
+    margin-top: 20px;
+  }
+} */
+
+@media (max-width: 900px) {
+
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* 1st column full width */
+  .footer-column:nth-child(1) {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+}
+

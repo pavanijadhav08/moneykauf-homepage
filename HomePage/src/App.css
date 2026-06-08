@@ -1,0 +1,91 @@
+/* Full Height Layout */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background-color: #0a0a0a; /* deep black base */
+  color: #ffffff;
+}
+
+/* Wrapper */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ===== METALLIC BLACK FOOTER STYLE ===== */
+
+.footer {
+  background: linear-gradient(
+    145deg,
+    #0f0f0f,
+    #1a1a1a 40%,
+    #0c0c0c
+  );
+  color: #e5e5e5;
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Subtle metal shine overlay */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255,255,255,0.08),
+    transparent 40%
+  );
+  transform: rotate(25deg);
+  pointer-events: none;
+}
+
+/* Footer Links */
+.footer a {
+  color: #cfcfcf;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+/* Footer Headings */
+.footer h3,
+.footer h4 {
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Bottom Line */
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 14px;
+  color: #999;
+}

@@ -1,0 +1,353 @@
+/* ===== METALLIC BLACK NAVBAR ===== */
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: linear-gradient(145deg,
+      #0f0f0f,
+      #1a1a1a 40%,
+      #0c0c0c);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+
+
+/* Subtle metallic shine overlay */
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+
+  background: radial-gradient(circle at 30% 30%,
+      rgba(255, 255, 255, 0.08),
+      transparent 40%);
+
+  transform: rotate(25deg);
+  pointer-events: none;
+}
+
+/* Centered Container */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+ padding: 18px 12px 15px 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  /* important for overlay */
+  z-index: 2;
+}
+
+/* Logo */
+.nav-logo a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 35px;
+  font-weight: 650;
+  color: #ffffff;
+}
+
+
+
+/* ===== HAMBURGER ===== */
+
+.hamburger {
+  width: 28px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* Animation to X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+
+
+/* ===== SIDE MENU ===== */
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100vh;
+
+  background: linear-gradient(145deg,
+      #0f0f0f,
+      #1a1a1a 40%,
+      #0c0c0c);
+
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  transform: translateX(100%);
+  /* completely hidden */
+  transition: transform 0.4s ease;
+
+  z-index: 1050;
+}
+
+.side-menu.open {
+  transform: translateX(0);
+  /* slides in */
+}
+
+.menu-links {
+  list-style: none;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #cfcfcf;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.menu-links li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;   /* 👈 Controls space between icon and text */
+}
+
+.menu-links a:hover {
+  color: white;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* ===== SLIDER HEADER ===== */
+
+.slider-header {
+  padding: 30px 30px 20px 30px;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-header h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ===== Metallic Divider Line ===== */
+
+.slider-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+right: 30px;
+  height: 1px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+
+/* Close Icon Styling */
+.close-icon {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.side-menu.open .close-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Overlay Background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 1000;
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: #cfcfcf;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+ .login {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.login:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+/* CTA Button – Black Metal Standout */
+
+.cta-btn {
+  background: linear-gradient(145deg,
+      #1c1c1c,
+      #2a2a2a 40%,
+      #141414);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 24px;
+  border-radius: 6px;
+
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  position: relative;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.6),
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+/* Electric Glow Hover */
+.cta-btn:hover {
+  border-color: rgba(59, 130, 246, 0.6);
+
+  box-shadow:
+    0 0 12px rgba(59, 130, 246, 0.5),
+    0 0 24px rgba(59, 130, 246, 0.3),
+    inset 0 0 12px rgba(255, 255, 255, 0.08);
+
+  transform: translateY(-2px);
+}
+
+/* Click Press Effect */
+.cta-btn:active {
+  transform: scale(0.96);
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.7),
+    inset 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+li {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+
+  .nav-container {
+    padding: 14px 16px;
+  }
+
+  .nav-logo {
+    font-size: 22px;
+  }
+
+  .hamburger {
+    width: 24px;
+    height: 18px;
+  }
+
+  .hamburger span {
+    height: 2px;
+  }
+
+ .side-menu {
+  width: 60vw;
+  max-width: 550px;
+}
+  .menu-links {
+    padding: 25px;
+    gap: 22px;
+  }
+
+  .menu-links a {
+    font-size: 16px;
+  }
+
+  .slider-header {
+    padding: 20px;
+  }
+
+  .slider-header h2 {
+    font-size: 20px;
+  }
+
+  .cta-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+  .sidebar {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: min(50vw, 350px);
+}
+}
