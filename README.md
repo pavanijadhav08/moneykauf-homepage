@@ -17,6 +17,13 @@ A modern fintech landing page designed for seamless international money transfer
 - Trust-focused messaging (secure transfers)
 
 
-<img width="1877" height="878" alt="image" src="https://github.com/user-attachments/assets/b7da20de-d28d-4445-8cd0-8df90abe5c2d" />
 
-<img width="1873" height="889" alt="image" src="https://github.com/user-attachments/assets/0b1c7cc1-67b6-463f-bec7-2a950c0da9c4" />
+
+<img width="1872" height="891" alt="image" src="https://github.com/user-attachments/assets/61168351-c995-4673-82d7-a0b8dd255b61" />
+
+<img width="1880" height="882" alt="image" src="https://github.com/user-attachments/assets/eec3fa3c-7e62-4e49-8477-f32834694d9f" />
+
+
+
+
+
