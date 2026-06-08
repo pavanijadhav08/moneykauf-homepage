@@ -1,16 +1,31 @@
-# React + Vite
+# moneykauf-homepage
+A modern fintech landing page designed for seamless international money transfers. This homepage delivers a clean UI, real-time currency preview, and strong call-to-action for users.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- The Moneykauf Homepage is the entry point of the platform, focused on:
+  - Showcasing international money transfer services
+  - Displaying live currency exchange preview
+  - Providing a smooth and engaging user experience
+ 
+  ## Features
+- Clean fintech UI design
+- Currency exchange preview
+- Fast and responsive layout
+- Clear call-to-action buttons
+- Trust-focused messaging (secure transfers)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="1872" height="891" alt="image" src="https://github.com/user-attachments/assets/944b34d9-d302-4a9b-8fdd-8f0f81c5b58f" />
+
+<img width="1880" height="889" alt="image" src="https://github.com/user-attachments/assets/0ee85820-f46e-4d9e-b157-fc37094be9f2" />
+
+
+
+
+
+
+
